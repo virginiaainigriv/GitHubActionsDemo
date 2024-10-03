@@ -1,0 +1,15 @@
+name: My second workflow 
+on: push
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greetings!
+        run: echo "Hello All"
+  secondjob:
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Run multiple commands 
+        run: |
+          echo "Hello Github"
+          echo "This is job1"
